@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project specific data
+data/raw/*.csv
+data/processed/*.csv
+
+# Trained models
+# models/*.pkl (Commented out: usually we want to keep a default model in GitHub so others can test it)
+models/confusion_matrix.png
+
+# PyInstaller Build Files
+build/
+dist/
+*.spec
+*.exe

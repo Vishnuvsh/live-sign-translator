@@ -1,0 +1,31 @@
+# opencv-python>=4.8.0
+opencv-python==4.8.1.78
+
+# MediaPipe for hand landmark detection
+mediapipe==0.10.14
+
+# Core scientific computing
+numpy>=1.24.0
+
+# Machine learning classifier
+scikit-learn>=1.3.0
+
+# Model serialization
+joblib>=1.3.0
+
+# Offline Text-to-Speech (no cloud required)
+pyttsx3>=2.90
+
+# Modern Tkinter UI
+customtkinter>=5.2.0
+
+# Image processing for Tkinter canvas
+Pillow>=10.0.0
+
+# Matplotlib for confusion matrix visualization (optional but recommended)
+matplotlib>=3.7.0
+
+# ---------------------------------------------------------------------------
+# Development / testing only
+# ---------------------------------------------------------------------------
+pytest>=7.4.0
