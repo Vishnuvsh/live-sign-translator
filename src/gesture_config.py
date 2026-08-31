@@ -66,6 +66,7 @@ STABILITY_MIN_AGREE: int        = 8      # Frames that must agree to confirm a g
 # Sentence Builder / Cooldown
 # ---------------------------------------------------------------------------
 WORD_COOLDOWN_SECONDS: float    = 4.0    # Seconds before the same word can be added again
+SENTENCE_AUTO_CLEAR_SECONDS: float = 3.0 # Seconds after which the sentence automatically clears
 
 # ---------------------------------------------------------------------------
 # Dataset paths

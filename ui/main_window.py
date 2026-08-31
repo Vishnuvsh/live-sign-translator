@@ -35,6 +35,7 @@ from src.gesture_config       import (
     UI_THEME,
     UI_UPDATE_MS,
     UI_WINDOW_TITLE,
+    SENTENCE_AUTO_CLEAR_SECONDS,
 )
 from src.hand_detector        import HandDetector
 from src.prediction_stabilizer import PredictionStabilizer
@@ -287,6 +288,11 @@ class MainWindow:
                 status = "DETECTING" if not self._model_loaded else "DETECTING"
         else:
             self._stabilizer.update(None)
+
+        # --- Auto-clear sentence ---
+        if not self._sentence_builder.is_empty:
+            if self._sentence_builder.time_since_last_add > SENTENCE_AUTO_CLEAR_SECONDS:
+                self._clear_sentence()
 
         # --- Update UI ---
         self._cam_panel.update_frame(frame, gesture_name, confidence, status, fps)

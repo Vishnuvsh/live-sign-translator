@@ -134,6 +134,13 @@ class SentenceBuilder:
         remaining = self._cooldown - elapsed
         return max(0.0, remaining)
 
+    @property
+    def time_since_last_add(self) -> float:
+        """Seconds since the last word was added."""
+        if self.is_empty:
+            return 0.0
+        return time.monotonic() - self._last_add_time
+
     # ------------------------------------------------------------------
     # Internal
     # ------------------------------------------------------------------
