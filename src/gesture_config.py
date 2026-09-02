@@ -24,9 +24,10 @@ GESTURES: list[dict] = [
     {"id": 1, "name": "What",   "spoken": "What"},
     {"id": 2, "name": "Is",     "spoken": "is"},
     {"id": 3, "name": "Your",   "spoken": "your"},
-    {"id": 4, "name": "Name",   "spoken": "name"},
-    {"id": 5, "name": "My",     "spoken": "My"},
-    {"id": 6, "name": "Harry Styles", "spoken": "Harry Styles"},
+    {"id": 4, "name": "Name",        "spoken": "name"},
+    {"id": 5, "name": "My",          "spoken": "My"},
+    {"id": 6, "name": "Vishnu",       "spoken": "Vishnu"},
+    {"id": 7, "name": "Thank You",    "spoken": "Thank You"},
 ]
 
 # Derived lookup maps (built from GESTURES — do not edit directly)

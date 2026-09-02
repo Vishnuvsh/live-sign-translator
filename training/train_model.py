@@ -240,7 +240,7 @@ def save_model(model, class_names: list[str]) -> None:
     }
     joblib.dump(payload, MODEL_PATH, compress=3)
     logger.info(f"Model saved: {MODEL_PATH}")
-    print(f"  ✓ Model saved to: {MODEL_PATH}\n")
+    print(f"  [OK] Model saved to: {MODEL_PATH}\n")
 
 
 # ---------------------------------------------------------------------------
